@@ -1,0 +1,14 @@
+﻿@page "/students/create" 
+<h3>Create a new student</h3>
+<EditForm Model="@Model" OnValidSubmit="HandelValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label>Name</label>
+        <InputText @bind-Value="Model.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Name</label>
+        <InputText @bind-Value="Model.Email" class="form-control" />
+    </div>
+    <button class="btn btn-outline-primary">Save</button>
+</EditForm>
